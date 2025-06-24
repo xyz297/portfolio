@@ -14,7 +14,7 @@ const experiences = [
     period: 'Sep 2023 – Present',
     duration: '2 years',
     type: 'Full-time',
-    level: 'Senior',
+    level: 'Mid-level',
     description: '',
     // 'ETL development and data analysis initiatives, managing cross-functional teams and delivering business-critical insights.',
     points: [
@@ -44,7 +44,7 @@ const experiences = [
     period: 'Apr 2023 – Aug 2023',
     duration: '5 months',
     type: 'Full-time',
-    level: 'Mid-level',
+    level: 'Junior',
     description: 'Contributed to data analysis projects and ETL process development while enhancing reporting accuracy.',
     points: [
       'Supported data analysis tasks, including generating reports and analyzing trends in project data',
@@ -130,7 +130,7 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className="w-full px-6 py-20 bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
+    <section id="experience" className="w-full px-6 py-10 bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -224,7 +224,7 @@ export default function Experience() {
                           <div className="text-sm font-semibold text-gray-900">{job.period}</div>
                           <div className="text-xs text-gray-500">{job.duration}</div>
                         </div>
-                        <button className="flex items-center gap-1 text-gray-600 hover:text-gray-900 transition-colors">
+                        <button className="flex items-center gap-1 text-white transition-colors bg-blue-500 p-2 rounded-lg">
                           <span className="text-sm">
                             {expandedCard === job.id ? 'Show Less' : 'Show More'}
                           </span>
@@ -241,7 +241,7 @@ export default function Experience() {
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {job.skills.map((skill, i) => (
-                          <Badge key={i} variant="outline" className="bg-gray-50 text-gray-700 border-gray-200 hover:bg-gray-100 transition-colors">
+                          <Badge key={i} variant="outline" className="bg-green-50 text-gray-700 border-gray-200 hover:bg-green-100 transition-colors">
                             {skill}
                           </Badge>
                         ))}
@@ -293,9 +293,9 @@ export default function Experience() {
         </div>
 
         {/* Career Progression Summary */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-100 shadow-lg">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-100 shadow-lg min-w-screen">
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 bg-blue-50 px-6 py-3 rounded-full border border-blue-200 mb-6">
+            <div className="inline-flex items-center gap-3 bg-blue-50 px-6 py-3 rounded-full border border-blue-200 mb-2">
               <TrendingUp className="w-5 h-5 text-blue-600" />
               <span className="font-medium text-blue-700">Career Growth</span>
             </div>
@@ -306,17 +306,17 @@ export default function Experience() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl border border-blue-200 hover:border-blue-300 hover:shadow-lg transition-all">
+              <div className="bg-white p-6 rounded-xl border border-blue-200 hover:border-blue-300 hover:shadow-md transition-all">
                 <div className="text-3xl font-bold text-blue-600 mb-2">2.5+ Years</div>
                 <div className="text-gray-600">Total Experience</div>
               </div>
               
-              <div className="bg-white p-6 rounded-xl border border-green-200 hover:border-green-300 hover:shadow-lg transition-all">
+              <div className="bg-white p-6 rounded-xl border border-green-200 hover:border-green-300 hover:shadow-md transition-all">
                 <div className="text-3xl font-bold text-green-600 mb-2">4 Roles</div>
                 <div className="text-gray-600">Progressive Growth</div>
               </div>
               
-              <div className="bg-white p-6 rounded-xl border border-indigo-200 hover:border-indigo-300 hover:shadow-lg transition-all">
+              <div className="bg-white p-6 rounded-xl border border-indigo-200 hover:border-indigo-300 hover:shadow-md transition-all">
                 <div className="text-3xl font-bold text-indigo-600 mb-2">1 Company</div>
                 <div className="text-gray-600">Consistent Growth</div>
               </div>

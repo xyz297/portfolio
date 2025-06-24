@@ -19,12 +19,12 @@ export default function Hero() {
                 Available for opportunities
               </div>
               
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+              <h1 className="text-gray-600 text-lg font-bold leading-relaxed">
                 Hi, I&apos;m <span className="text-blue-600">Amit Tripathi</span>
               </h1>
               
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
-                Data Analyst & ETL Expert
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-2">
+                Data Analyst & ETL Developer
               </h2>
               
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">

@@ -18,7 +18,7 @@ const projects: Gallery4Item[] = [
     ],
     tags: ['ETL', 'Pentaho DI', 'SQL', 'JSON', 'Data Modeling'],
     type: 'Professional',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    image: 'https://images.unsplash.com/photo-1554755229-ca4470e07232?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     company: 'Netlink Software Group'
   },
   {
@@ -34,7 +34,7 @@ const projects: Gallery4Item[] = [
     ],
     tags: ['ETL', 'Automation', 'Team Management', 'Code Review'],
     type: 'Professional',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    image: 'https://images.unsplash.com/photo-1554755229-ca4470e07232?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     company: 'Netlink Software Group'
   },
   {
@@ -50,7 +50,7 @@ const projects: Gallery4Item[] = [
     ],
     tags: ['Business Intelligence', 'SCD', 'Dashboard', 'Management Tools'],
     type: 'Professional',
-    image: 'https://images.unsplash.com/photo-1551634815-dd4e7b2e0bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    image: 'https://images.unsplash.com/photo-1554755229-ca4470e07232?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     company: 'Netlink Software Group'
   },
   {
@@ -84,7 +84,7 @@ const projects: Gallery4Item[] = [
     ],
     tags: ['Power BI', 'DAX', 'Star Schema', 'Healthcare Analytics', 'Data Visualization'],
     type: 'Personal',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    image: 'https://images.unsplash.com/photo-1554755229-ca4470e07232?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '#'
   },
 ];
