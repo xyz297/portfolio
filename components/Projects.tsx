@@ -1,11 +1,11 @@
 'use client';
 
-import { FolderKanban, ExternalLink } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Gallery4 } from '@/components/ui/gallery4';
+import type { Gallery4Item } from '@/components/ui/gallery4';
 
-const projects = [
+const projects: Gallery4Item[] = [
   {
+    id: 'outliers-agent-detection',
     title: 'Outliers Agent Detection',
     description: 'Application designed to audit outlier calls and provide feedback after the audit, categorizing calls as bad call, connection issue or coaching needed etc. Based on this feedback, higher authorities can assess an auditor\'s performance.',
     bullets: [
@@ -17,9 +17,12 @@ const projects = [
       'Developed data modeling and strategies using star and snowflake schemas for efficient data storage and retrieval'
     ],
     tags: ['ETL', 'Pentaho DI', 'SQL', 'JSON', 'Data Modeling'],
-    type: 'Professional'
+    type: 'Professional',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    company: 'Netlink Software Group'
   },
   {
+    id: 'vendor-commit-portal',
     title: 'Vendor Commit Portal',
     description: 'Application designed to facilitate efficient goal setting, tracking, and management for both individuals and teams. The platform allows users to define, commit and monitor their goals through a user-friendly interface and advanced tracking features.',
     bullets: [
@@ -30,9 +33,12 @@ const projects = [
       'Automated data testing with Pentaho PDI and SQL, generating dynamic Excel reports'
     ],
     tags: ['ETL', 'Automation', 'Team Management', 'Code Review'],
-    type: 'Professional'
+    type: 'Professional',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    company: 'Netlink Software Group'
   },
   {
+    id: 'siriusxm-cv-dashboard',
     title: 'SiriusXM CV Dashboard',
     description: 'Comprehensive Business Intelligence solution for SiriusXM\'s Sales and Saves data of connected vehicle Line of Business. Designed multiple dashboards to help both management and agents monitor performance trends. Includes a Coaching Management Tool for supervisors.',
     bullets: [
@@ -43,22 +49,29 @@ const projects = [
       'Built dynamic dashboard usage report for management users'
     ],
     tags: ['Business Intelligence', 'SCD', 'Dashboard', 'Management Tools'],
-    type: 'Professional'
+    type: 'Professional',
+    image: 'https://images.unsplash.com/photo-1551634815-dd4e7b2e0bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+    company: 'Netlink Software Group'
   },
   {
+    id: 'echopost-ai',
     title: 'EchopostAI — LinkedIn Post Generator',
     description: 'GenAI-powered tool to generate LinkedIn posts from user input with automatic hashtag addition and one-click copy-to-share functionality.',
     bullets: [
       'Built using Various AI tools like Cursor, ChatGPT and Deepseek',
       'Custom backend designed for seamless user experience',
       'Automatically add relevant hashtags on the generated post',
-      'Allows one-click copy and share to LinkedIn'
+      'Allows one-click copy and share to LinkedIn',
+      'Implemented natural language processing for content optimization',
+      'Created user-friendly interface with real-time preview functionality'
     ],
-    tags: ['GenAI', 'ChatGPT', 'Cursor', 'Backend Development'],
+    tags: ['GenAI', 'ChatGPT', 'Cursor', 'Backend Development', 'NLP'],
     type: 'Personal',
+    image: '/echopostai.png',
     link: 'https://echopostai.netlify.app'
   },
   {
+    id: 'hospitality-dashboard',
     title: 'Hospitality Dashboard — Power BI',
     description: 'Comprehensive Power BI dashboard for tracking patient flow, bed occupancy, and doctor utilization in healthcare settings.',
     bullets: [
@@ -66,115 +79,24 @@ const projects = [
       'Designed a Star Schema and implemented relationships',
       'Built DAX measures for patient flow, bed occupancy, doctor utilization, medication usage',
       'Created interactive charts, slicers, and drill-downs',
-      'Published to Power BI Service with scheduled refresh'
+      'Published to Power BI Service with scheduled refresh',
+      'Developed automated alerting system for critical metrics'
     ],
-    tags: ['Power BI', 'DAX', 'Star Schema', 'Healthcare Analytics'],
+    tags: ['Power BI', 'DAX', 'Star Schema', 'Healthcare Analytics', 'Data Visualization'],
     type: 'Personal',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
     link: '#'
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full px-6 py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-2">
-            <FolderKanban className="w-8 h-8 text-blue-600" /> 
-            Projects
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A collection of my professional and personal projects demonstrating expertise in data analysis, ETL development, and business intelligence.
-          </p>
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-2">
-          {projects.map((project, idx) => (
-            <Card key={idx} className="group border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 bg-white hover:-translate-y-1">
-              <CardContent className="p-8">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-3">
-                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{project.title}</h3>
-                      {project.link && (
-                        <a 
-                          href={project.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-blue-600 hover:text-blue-800 p-1 rounded-full hover:bg-blue-50 transition-all"
-                        >
-                          <ExternalLink size={18} />
-                        </a>
-                      )}
-                    </div>
-                    <Badge 
-                      variant={project.type === 'Professional' ? 'default' : 'secondary'} 
-                      className={`mb-3 px-3 py-1 ${project.type === 'Professional' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-green-100 text-green-700'}`}
-                    >
-                      {project.type}
-                    </Badge>
-                  </div>
-                </div>
-                
-                <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
-                
-                <div className="mb-6">
-                  <h4 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                    Key Achievements:
-                  </h4>
-                  <ul className="space-y-2">
-                    {project.bullets.slice(0, 3).map((pt, i) => (
-                      <li key={i} className="flex items-start gap-2 text-gray-700 text-sm">
-                        <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 flex-shrink-0"></span>
-                        {pt}
-                      </li>
-                    ))}
-                    {project.bullets.length > 3 && (
-                      <li className="text-gray-500 text-sm italic">
-                        +{project.bullets.length - 3} more achievements...
-                      </li>
-                    )}
-                  </ul>
-                </div>
-
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, i) => (
-                    <Badge 
-                      key={i} 
-                      variant="outline" 
-                      className="text-xs hover:bg-blue-50 hover:border-blue-300 transition-colors"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-12">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Interested in My Work?</h3>
-            <p className="text-gray-600 mb-6">
-              I&apos;m always excited to discuss new projects and opportunities. Let&apos;s connect to explore how I can help with your data analysis and ETL needs.
-            </p>
-            <a 
-              href="#contact" 
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Get In Touch
-              <ExternalLink size={16} />
-            </a>
-          </div>
-        </div>
-      </div>
+    <section id="projects" className="w-full bg-gradient-to-br from-gray-50 to-blue-50 pl-5">
+      <Gallery4 
+        title="Featured Projects"
+        description="A showcase of my professional and personal projects demonstrating expertise in data analysis, ETL development, and business intelligence solutions."
+        items={projects}
+      />
     </section>
   );
 }
