@@ -7,7 +7,7 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} Amit Tripathi</span>
         <div className="space-x-4">
           <a href="mailto:amit5000tripathi@gmail.com" className="hover:underline">Email</a>
-          <a href="https://linkedin.com/in/" target="_blank" className="hover:underline">LinkedIn</a>
+          <a href="https://linkedin.com/in/amit5000tripathi" target="_blank" className="hover:underline">LinkedIn</a>
         </div>
       </div>
     </footer>

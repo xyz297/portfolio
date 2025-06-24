@@ -74,7 +74,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">LinkedIn</h4>
-                      <a href="https://linkedin.com/in/amit-tripathi-profile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                      <a href="https://linkedin.com/in/amit5000tripathi" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                         Connect on LinkedIn
                       </a>
                     </div>
