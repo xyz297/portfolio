@@ -61,14 +61,15 @@ const colorClasses = {
     border: 'border-green-200', 
     icon: 'text-green-600',
     badge: 'bg-green-100 text-green-700 border-green-300',
-    hover: 'hover:border-green-300'
+    hover: ''
+    // 'hover:border-green-300'
   },
   purple: {
     bg: 'bg-purple-50',
     border: 'border-purple-200',
     icon: 'text-purple-600',
     badge: 'bg-purple-100 text-purple-700 border-purple-300',
-    hover: 'hover:border-purple-300'
+    hover: 'hover:border-purple-300 '
   },
   indigo: {
     bg: 'bg-indigo-50',
@@ -222,7 +223,13 @@ export default function About() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/resume.pdf';
+              link.download = 'Amit_Tripathi_Data_Analyst_resume.pdf'; // Custom filename for download
+              link.click();
+            }}>
                 <Download className="w-4 h-4" />
                 Download Resume
               </button>

@@ -50,7 +50,13 @@ export default function Hero() {
               Get In Touch
             </Link>
             
-            <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-50 transition-all duration-300">
+            <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-50 transition-all duration-300"
+              onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/resume.pdf';
+              link.download = 'Amit_Tripathi_Data_Analyst_resume.pdf'; // Custom filename for download
+              link.click();
+            }}>
               <Download size={16} />
               Download CV
             </button>
