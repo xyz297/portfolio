@@ -221,7 +221,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Buttons
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               onClick={() => {
@@ -244,7 +244,7 @@ export default function About() {
                 <Mail className="w-4 h-4" />
                 Get in Touch
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Skills Panel */}
@@ -269,7 +269,7 @@ export default function About() {
                   onMouseLeave={() => setHoveredCard(null)}
                 >
                   <CardContent className={`p-6 ${colors.bg} rounded-lg`}>
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-3">
                       <div className={`w-10 h-10 ${colors.bg} rounded-lg flex items-center justify-center border ${colors.border}`}>
                         <IconComponent className={`w-5 h-5 ${colors.icon}`} />
                       </div>
@@ -298,15 +298,15 @@ export default function About() {
         {/* Statistics Section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 text-center hover:shadow-xl transition-shadow">
-            <div className="text-3xl font-bold text-blue-600 mb-2">3+</div>
+            <div className="text-3xl font-bold text-blue-600">3+</div>
             <div className="text-gray-600">Years Experience</div>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-lg border border-green-100 text-center hover:shadow-xl transition-shadow">
-            <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
+            <div className="text-3xl font-bold text-green-600">15+</div>
             <div className="text-gray-600">Technologies</div>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 text-center hover:shadow-xl transition-shadow">
-            <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
+            <div className="text-3xl font-bold text-purple-600">5+</div>
             <div className="text-gray-600">Major Projects</div>
           </div>
         </div>
