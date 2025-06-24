@@ -1,3 +1,6 @@
+
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Mail, Phone, Download } from "lucide-react";
